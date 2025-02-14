@@ -1,7 +1,9 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
+import './styles/App.css'
+import LandingPage from "./pages/LandingPage"; // UPDATED path
+import "./styles/App.css"; // UPDATED path
 
 function App() {
   const [count, setCount] = useState(0)
@@ -25,6 +27,9 @@ function App() {
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
       </div>
+        <div className="App">
+            <LandingPage />
+        </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
