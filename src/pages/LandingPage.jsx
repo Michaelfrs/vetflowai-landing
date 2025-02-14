@@ -15,6 +15,8 @@ function LandingPage() {
         <div className="container">
             <section className="hero">
                 <h1>Welcome to VetFlowAI</h1>
+                <h1>🚀 VetFlowAI: Future of Vet Clinics</h1>
+
                 <p>AI-powered efficiency for veterinary clinics.</p>
 
                 {submitted ? (

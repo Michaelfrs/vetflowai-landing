@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  vetflowai_landing:
+    container_name: vetflowai_landing
+    image: node:20
+    working_dir: /app
+    volumes:
+      - .:/app  # Mounts local project files
+      - /app/node_modules  # Prevents node_modules override issues
+    ports:
+      - "5173:5173"
+    command: sh -c "npm install && npm run dev -- --host"
